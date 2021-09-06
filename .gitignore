@@ -7,10 +7,9 @@
 /public/bundles/
 /var/
 /vendor/
-
 /.idea/
 /composer.lock
-
+/.idea/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
