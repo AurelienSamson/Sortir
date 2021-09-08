@@ -30,7 +30,7 @@ class Inscriptions
 
     /**
      * @ORM\ManyToOne(targetEntity=Participants::class)
-     * @ORM\JoinColumn(nullable=false, referencedColumnName="no_participant")
+     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
      */
     private $participants_no_participant;
 
