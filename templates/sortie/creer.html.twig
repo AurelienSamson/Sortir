@@ -1,0 +1,71 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer une sortie {% endblock %}
+
+    {% block content %}
+
+        <h1> Créer une sortie </h1>
+        {{ form_start(formSortie) }}
+
+        <div class="row">
+            <div class="input-field col-4 ">
+                <div class="form-group">
+                    {{ form_label(formSortie.nom,'Nom de la sortie',{'label_attr':{'class':'form-label'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col-4">
+                <div class="form-group">
+                    {{form_label(formSortie.datedebut,'Date et heure de la sortie',{'label_attr':{'class':'form-label'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col-4 ">
+                <div class="form-group">
+                    {{form_label(formSortie.duree,'Date limite d'inscription,{'label_attr':{'class':'form-label'}}) }}
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col-4">
+                <div class="form-group">
+                    {{form_label(formSortie.nbinscriptionmax,'Nombre de place',{'label_attr':{'class':'form-label'}}) }}
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col-4">
+                <div class="form-group">
+                    {{form_label(formSortie.duree,'Durée',{'label_attr':{'class':'form-label'}}) }}
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col-4">
+                <div class="form-group">
+                    {{form_label(formSortie.descriptioninfos,'Description et infos',{'label_attr':{'class':'form-label'}}) }}
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col-4">
+                <div class="form-group">
+                    {{ form_widget(formSortie.Enregistrer, {'attr': {'class': 'btn btn-primary'}}) }}
+                </div>
+            </div>
+        </div>
+        {{ form_end(formWish) }}
+
+    {% endblock %}
