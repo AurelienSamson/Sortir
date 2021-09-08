@@ -60,7 +60,7 @@ class Sorties
 
     /**
      * @ORM\ManyToOne(targetEntity=Participants::class)
-     * @ORM\JoinColumn(nullable=false, referencedColumnName="no_participant")
+     * @ORM\JoinColumn(nullable=false, referencedColumnName="id")
      */
     private $organisateur;
 
