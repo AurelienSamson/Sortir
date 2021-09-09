@@ -19,41 +19,62 @@ class Villes
     private $no_ville;
 
     /**
-     * @ORM\Column(type="string", length=30)
+     * @ORM\Column(type="string", length=30, name="nom_ville")
      */
-    private $nom_ville;
+    private $nomVille;
 
     /**
      * @ORM\Column(type="string", length=30)
      */
     private $code_postal;
 
-    public function getNoVille(): ?int
+    /**
+     * @return mixed
+     */
+    public function getNoVille()
     {
         return $this->no_ville;
     }
 
-    public function getNomVille(): ?string
+    /**
+     * @param mixed $no_ville
+     */
+    public function setNoVille($no_ville): void
     {
-        return $this->nom_ville;
+        $this->no_ville = $no_ville;
     }
 
-    public function setNomVille(string $nom_ville): self
+    /**
+     * @return mixed
+     */
+    public function getNomVille()
     {
-        $this->nom_ville = $nom_ville;
-
-        return $this;
+        return $this->nomVille;
     }
 
-    public function getCodePostal(): ?string
+    /**
+     * @param mixed $nomVille
+     */
+    public function setNomVille($nomVille): void
+    {
+        $this->nomVille = $nomVille;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCodePostal()
     {
         return $this->code_postal;
     }
 
-    public function setCodePostal(string $code_postal): self
+    /**
+     * @param mixed $code_postal
+     */
+    public function setCodePostal($code_postal): void
     {
         $this->code_postal = $code_postal;
-
-        return $this;
     }
+
+
 }
